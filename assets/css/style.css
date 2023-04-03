@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
+
+/*
+font-family: 'Poppins', sans-serif;
+*/
+
+:root {
+    --verde: #01f767;
+    --azulEscuro: #182957;
+    --azulEscuroTransp: #1829576b;
+    --branco: #fff;
+    --cinza: rgb(170, 170, 170);
+    --preto: #000;
+    --pretoTransp: rgba(0, 0, 0, 0.521);
+    --poppins: 'Poppins', sans-serif;
+    --weightNormal: 200;
+    --weightForte: 600;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--poppins);
+    font-weight: var(--weightNormal);
+}
+
+section {
+    padding: 40px 0px;
+}
+
+.iconeMenu {
+    color: var(--verde);
+    font-size: 18px;
+}
+
+.nav-link {
+    color: var(--branco) !important;
+    font-weight: var(--weightForte);
+    font-size: 14px;
+    transition: .5s;
+}
+
+.nav-link:hover {
+    color: var(--verde) !important;
+}
+
+.tituloPag {
+    color: var(--azulEscuro);
+}
+
+.subtituloPag {
+    color: var(--verde);
+}
+
+.weightForte {
+    font-weight: var(--weightForte);
+}
+
+.verde {
+    color: var(--verde);
+}
+
+.azulEscuro {
+    color: var(--azulEscuro);
+}
+
+.branco {
+    color: var(--branco);
+}
+
+.bgVerde {
+    background: var(--verde);
+}
+
+.bgAzulEscuro {
+    background: var(--azulEscuro);
+}
+
+
+
+/*BOTOES*/
+.btnVerde {
+    background: var(--verde) !important;
+    color: var(--branco) !important;
+    border: 1px solid var(--verde);
+    outline: none;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.btnVerde:hover {
+    color: var(--verde) !important;
+    background: var(--branco) !important;
+}
+
+.btnAzulEscuro {
+    background: var(--azulEscuro) !important;
+    color: var(--branco) !important;
+    border: 1px solid var(--azulEscuro);
+    outline: none;
+    text-decoration: none;
+}
+
+.btnAzulEscuro:hover {
+    color: var(--verde) !important;
+}
+
+/*HEADER*/
+.navHeader {
+    color: var(--branco);
+    font-family: var(--poppins);
+    font-weight: var(--weightNormal);
+    background: rgba(0, 0, 0, 0.87);
+}
+
+.logoHeader {
+    width: 100px;
+}
+
+/*INDEX*/
+#bannerInicio {
+    background: linear-gradient(90deg, var(--preto), transparent), url("../img/banner.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.containerBanner {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--branco);
+}
+
+.containerTextoBanner {
+    font-family: var(--poppins);
+}
+
+.containerTextoBanner h2 {
+    font-weight: var(--weightForte);
+}
+
+.inputBanner {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid transparent;
+    width: 100%;
+    padding: 10px;
+    font-family: var(--poppins);
+}
+
+.inputBanner:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #01f767;
+}
+
+.containerServico {
+    background: var(--azulEscuro);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.containerServico i {
+    font-size: 35px;
+    color: var(--verde);
+}
+
+.containerServico h5 {
+    font-weight: var(--weightForte);
+}
+
+.containerResultados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 0px;
+    color: var(--branco);
+    background: var(--verde);
+    border-radius: 20px;
+    font-weight: var(--weightForte);
+}
+
+.numeroResultado {
+    font-size: 25px;
+    font-weight: var(--weightNormal) !important;
+}
+
+.containerResultados span {
+    font-weight: var(--weightForte);
+}
+
+.tituloResultado {
+    font-size: 20px;
+}
+
+/*SIMULAÇÃO*/
+.ItemForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--preto);
+    margin-bottom: 10px;
+}
+
+.iconeSimulacao {
+    color: var(--azulEscuro);
+}
+
+.inputSimulacao {
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: 1px solid var(--cinza);
+    transition: .5s;
+    border-radius: 0px;
+    color: var(--cinza);
+}
+
+.inputSimulacao:focus {
+    outline: none;
+    border-bottom: 1px solid var(--verde);
+}
+
+.txtIndiceImagemSimulacao {
+    font-size: 14px;
+    text-align: center;
+}
+
+.form-check-input:checked {
+    background-color: var(--azulEscuro);
+    border-color: var(--azulEscuro);
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.termosArea {
+    text-align: left;
+    width: 100% !important;
+    height: 500px;
+    padding: 10px;
+    color: var(--cinzaTexto);
+    background: var(--banco);
+    user-select: none;
+    resize: none;
+}
+
+footer {
+    background: var(--azulEscuro);
+    padding: 20px 0px;
+}
+
+.listaPrincipaisServicoFooter {
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.redesSociaisFooter {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.redesSociaisFooter a {
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--branco);
+    transition: .5;
+}
+
+.redesSociaisFooter a:hover {
+
+    color: var(--cinza);
+
+}
+
+.avisoCredenciada {
+    color: var(--cinza);
+}
+
+.txtObservacao {
+    color: var(--branco);
+    text-align: justify;
+    font-size: 10px;
+}
+
+
+/*DISPOSITIVOS MUITO FINOS (GALAXY FOLG)*/
+
+@media screen and (max-width: 300px) {
+
+    .nav-link {
+        color: var(--preto) !important;
+    }
+
+    #bannerInicio {
+        background: linear-gradient(var(--preto), transparent), url("../img/banner_mobile.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .btnVerde {
+        width: 100%;
+    }
+
+    .textoSobreNos {
+        text-align: center;
+        margin-top: 50px;
+        padding-left: .5rem;
+    }
+
+    .alinhamentoCentroCelular {
+        text-align: center;
+    }
+
+    .containerServico,
+    .containerResultados {
+        margin-bottom: 20px;
+    }
+
+    .containerConsultor {
+        margin-bottom: 30px;
+    }
+
+    .btnFaleConosco {
+        padding: 10px 10px !important;
+    }
+
+    .inputSimulacao {
+        font-size: 18px;
+    }
+
+    .form-check-label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 301px) and (max-width: 575px) {
+    .nav-link {
+        color: var(--preto) !important;
+    }
+
+    .containerBanner {
+        justify-content: center;
+    }
+
+    #bannerInicio {
+        background: linear-gradient(var(--preto), transparent), url("../img/banner_mobile.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .btnVerde {
+        width: 100%;
+    }
+
+    .textoSobreNos {
+        text-align: center;
+        margin-top: 50px;
+        padding-left: .5rem;
+    }
+
+    .alinhamentoCentroCelular {
+        text-align: center;
+    }
+
+    .containerServico,
+    .containerResultados {
+        margin-bottom: 20px;
+    }
+
+    .containerConsultor {
+        margin-bottom: 30px;
+    }
+
+    .btnFaleConosco {
+        padding: 10px 10px !important;
+    }
+
+    .inputSimulacao {
+        font-size: 18px;
+    }
+
+    .form-check-label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .nav-link {
+        color: var(--preto) !important;
+    }
+
+    .containerBanner {
+        justify-content: center;
+    }
+
+    #bannerInicio {
+        background: linear-gradient(var(--preto), transparent), url("../img/banner_mobile.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .containerServico,
+    .containerResultados {
+        margin-bottom: 20px;
+    }
+
+    .containerConsultor {
+        margin-bottom: 30px;
+    }
+
+    .textoSobreNos {
+        padding-left: 1rem;
+    }
+
+    .alinhamentoCentroCelular {
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    #bannerInicio {
+        background-position: center;
+    }
+
+    .containerServico,
+    .containerResultados {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #bannerInicio {
+        background-position: center;
+    }
+}

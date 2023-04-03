@@ -1,0 +1,1 @@
+window.simulacao = new Simulacao
